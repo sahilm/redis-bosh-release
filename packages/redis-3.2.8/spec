@@ -1,0 +1,7 @@
+---
+name: redis-3.2.8
+
+dependencies: []
+
+files:
+- redis-3.2.8/redis-3.2.8.tar.gz # From http://download.redis.io/releases/redis-3.2.8.tar.gz

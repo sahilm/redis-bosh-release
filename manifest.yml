@@ -1,0 +1,35 @@
+---
+name: redis
+director_uuid: 63ddb6a6-d6fe-40e1-b16b-2ff6b2034c79
+
+releases:
+- {name: redis, version: latest}
+
+resource_pools:
+- name: default
+  network: default
+  stemcell:
+    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+    version: latest
+
+networks:
+- {name: default, type: dynamic}
+
+compilation:
+  workers: 2
+  network: default
+
+update:
+  canaries: 1
+  max_in_flight: 3
+  canary_watch_time: 15000-30000
+  update_watch_time: 15000-300000
+
+jobs:
+- name: redis
+  instances: 1
+  templates:
+  - {name: redis, release: redis}
+  resource_pool: default
+  networks:
+  - name: default
