@@ -2,5 +2,5 @@
 blobstore:
   provider: local
   options:
-    blobstore_path: ~/blobs/redis
+    blobstore_path: /Users/pivotal/blobs/redis
 final_name: redis
