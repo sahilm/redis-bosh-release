@@ -12,3 +12,4 @@ rspec.xml
 vendor/*
 .idea/
 .DS_Store
+local-blobs/

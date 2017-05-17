@@ -33,3 +33,11 @@ jobs:
   resource_pool: default
   networks:
   - name: default
+
+- name: broker
+  instances: 1
+  templates:
+  - {name: broker, release: redis}
+  resource_pool: default
+  networks:
+  - name: default

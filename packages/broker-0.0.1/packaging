@@ -1,0 +1,6 @@
+set -e -x
+
+mkdir -p ${BOSH_INSTALL_TARGET}/bin/
+
+cp broker-0.0.1/broker ${BOSH_INSTALL_TARGET}/bin/
+chmod -R 0755 ${BOSH_INSTALL_TARGET}/bin/

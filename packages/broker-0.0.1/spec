@@ -1,0 +1,7 @@
+---
+name: broker-0.0.1
+
+dependencies: []
+
+files:
+- broker-0.0.1/broker # From s3
