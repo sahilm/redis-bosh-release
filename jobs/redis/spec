@@ -1,0 +1,6 @@
+---
+name: redis
+templates:
+  ctl.erb: bin/ctl
+
+packages:
