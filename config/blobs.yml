@@ -1,1 +1,9 @@
---- {}
+---
+broker-0.0.1/broker:
+  object_id: 24fb705d-f802-4976-927c-fd353c308709
+  sha: f6b99256465f15d1368e77e37834ac14bca3b574
+  size: 6735610
+redis-3.2.8/redis-3.2.8.tar.gz:
+  object_id: ee6e9428-3582-4f90-a3fe-666e948c07f4
+  sha: 6780d1abb66f33a97aad0edbe020403d0a15b67f
+  size: 1547237
