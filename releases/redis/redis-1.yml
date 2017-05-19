@@ -1,0 +1,25 @@
+---
+packages:
+- name: broker-0.0.1
+  version: 3a4d0c7a68d9535c86e6f90775ed9adeb34632cf
+  fingerprint: 3a4d0c7a68d9535c86e6f90775ed9adeb34632cf
+  sha1: 54e920ce24c17a11c08f06ea1e6f507be7832956
+  dependencies: []
+- name: redis-3.2.8
+  version: 802b90c3508cf95b492ecb6a8ff37aa1b1db41f0
+  fingerprint: 802b90c3508cf95b492ecb6a8ff37aa1b1db41f0
+  sha1: f988a3ab845a9a11f0faa138b785c9aedb480e7f
+  dependencies: []
+jobs:
+- name: broker
+  version: 742256b7f95ea43c87c9d1b4695ca5bd75aa9267
+  fingerprint: 742256b7f95ea43c87c9d1b4695ca5bd75aa9267
+  sha1: d160d7d69666f47b314e134bb88c66829caedb91
+- name: redis
+  version: a99ee803c7053da777b58ca724a1a64008432ac5
+  fingerprint: a99ee803c7053da777b58ca724a1a64008432ac5
+  sha1: 406032ac550201722a0f209cde68d2abf3a7d62e
+commit_hash: d7704d0b
+uncommitted_changes: true
+name: redis
+version: '1'
