@@ -13,6 +13,7 @@ case $1 in
     echo $$ > $PIDFILE
 
     export PATH=/var/vcap/packages/broker-0.0.1/bin:$PATH
+    source /var/vcap/jobs/broker/config
 
     exec broker \
       >>  $LOG_DIR/broker.stdout.log \

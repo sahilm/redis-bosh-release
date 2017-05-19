@@ -2,6 +2,21 @@
 name: broker
 templates:
     ctl.erb: bin/ctl
+    config.erb: config
 
 packages:
 - broker-0.0.1
+
+properties:
+  broker.port:
+    description: Broker port
+    default: 8080
+  broker.redis_host:
+    description: Redis server host
+    default: 10.244.1.3
+  broker.redis_port:
+    description: Redis server port
+    default: 6379
+  broker.redis_password:
+    description: Redis server password
+    default: password

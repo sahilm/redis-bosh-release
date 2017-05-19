@@ -13,7 +13,11 @@ resource_pools:
     version: latest
 
 networks:
-- {name: default, type: dynamic}
+- name: default
+  subnets:
+  - range: 10.244.1.0/24
+    reserved: [10.244.1.1]
+    static: [10.244.1.2,10.244.1.6,10.244.1.10]
 
 compilation:
   workers: 2
@@ -31,6 +35,7 @@ jobs:
   templates:
   - {name: redis, release: redis}
   resource_pool: default
+  persistent_disk: 1024
   networks:
   - name: default
 
